@@ -7,5 +7,5 @@ import { Component } from '@angular/core';
 })
 export class BoxComponent {
     btitle:string= "notitle"
-    items:string[]=[]
+    items:string[]=["item1","item2","item3"]
 }

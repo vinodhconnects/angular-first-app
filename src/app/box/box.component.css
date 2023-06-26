@@ -1,0 +1,10 @@
+.box{
+  background-color: darkslategray;
+  color: white;
+  height: 300px;
+  width: 250px;
+  padding: 20px;
+  margin: 20px;
+  float: left;
+  box-shadow: 5px 5px 5px gray;
+}

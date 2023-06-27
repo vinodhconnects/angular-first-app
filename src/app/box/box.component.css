@@ -8,3 +8,25 @@
   float: left;
   box-shadow: 5px 5px 5px gray;
 }
+
+.header{
+  position: relative;
+  overflow: hidden;
+}
+
+.fonts{
+  position: absolute;
+  top: 15px;
+  right: 10px;
+}
+
+.fonts span {
+  font-size: 20px;
+  color: whitesmoke;
+  cursor: pointer;
+  font-weight: bold;
+  border: 2px solid white;
+  border-radius: 15px;
+  margin: 5px;
+  padding: 8px;
+}

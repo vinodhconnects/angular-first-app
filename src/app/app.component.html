@@ -1,5 +1,6 @@
 <h1> {{ title }} </h1>
-<app-box *ngFor="let x of boxtitles" [title]="x"></app-box>
+<app-box *ngFor="let x of boxtitles;let y=index" [title]="x"
+[items]="boxitems[y]"></app-box>
 
 <!--
   <app-box></app-box>

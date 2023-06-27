@@ -7,6 +7,12 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'firstapp';
-  boxtitles=["Electronics","Sports","Computer Languages","Spoken Languages","Countries"]
-  
+  boxtitles:string[]=["Electronics","Sports","Computer Languages","Spoken Languages","Countries"]
+  boxitems:string[][] =[
+    ["Pendrive","Laptop","Mobile"],
+    ["Tennis", "Cricket", "Soccer"],
+    ["Java","Python","PHP"],
+    ["Tamil","English","French"],
+    ["India","Japan","Mangolia","China"]
+  ]
 }

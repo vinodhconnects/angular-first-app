@@ -7,7 +7,7 @@ import { Component ,Input } from '@angular/core';
 })
 export class BoxComponent {
     @Input('title') btitle:string= "notitle"
-    items:string[]=["item1","item2","item3"]
+    @Input() items:string[]=["item1","item2","item3"]
     current:string= '#2E4053'
     boxStyle:any={
        fontFamily: 'Arial',

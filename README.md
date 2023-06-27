@@ -122,3 +122,43 @@ the function mentioned in the right side gets called
      it will be stored in the variable name
 
 ```
+
+## Parent child communication
+
+  * Sending data from parent to child
+  * communicating form child to parent
+
+### Parent to child communication
+
+Whether it is parent to child or child to parent communication
+in both the cases we deal the problem with respect to child
+
+in case 1, child is receiver
+in case 2 , child is the communicatio
+
+since child is the receiver we must have varaibles ready to receive
+the value from the parent and those variables must be decorated with a
+decorator called @Input
+
+```
+@Input title:string=""
+
+in the above case, title is decorated with @Input and hence
+title becomes an input diretive and the target of this
+directive is only the component in which this @Input decorator
+is defined,
+
+for example, if the component app-box
+
+we can use
+
+<app-box [title]="data"></app-box>
+
+Note: alias can also be used for @Input
+
+@Input('btitle') title:string=""
+
+
+<app-box [btitle]="x"></app-box>
+
+```

@@ -7,4 +7,6 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'firstapp';
+  boxtitles=["Electronics","Sports","Computer Languages","Spoken Languages","Countries"]
+  
 }

@@ -52,11 +52,11 @@ There are three kinds of directives in angular
 
    ### input directives
 
-        input directives receives value from the right
-        the change the behaviour of the target element
-        in general, input directives are enclosed within []
+   input directives receives value from the right
+   the change the behaviour of the target element
+   in general, input directives are enclosed within []
 
-        some inbuilt input directives are
+   some inbuilt input directives are
 
         ```
           ngClass,ngStyle, style, routerLink

@@ -58,12 +58,12 @@ There are three kinds of directives in angular
 
    some inbuilt input directives are
 
-        ```
+```
           ngClass,ngStyle, style, routerLink
 
-        ```
+```
 
-        example 
+example 
 
 ```
             <div [ngClass]="temp"></div>
@@ -82,11 +82,11 @@ There are three kinds of directives in angular
 
             <div  [ngClass]="'temp'"></div>   
 
-            ```
+```
 
          
          
-      ### output Directives
+### output Directives
 
 Output directives are event listeners
 

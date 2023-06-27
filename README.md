@@ -103,3 +103,22 @@ the function mentioned in the right side gets called
 
      all the events are output directives
 ```
+
+### Input output directive
+
+   It does the job of both input and output directive
+   it is enclosed withing [()]
+
+   there is only one popularly know input output directive
+   called as ngModel
+
+   usually it is used along with form Elements
+
+```
+     <input type="text" [(ngModel)]="name">
+
+     in the above example, if name has a value say "Rahul", it will be
+     filled in the text box and if you fill "Ravi" in the text box
+     it will be stored in the variable name
+
+```

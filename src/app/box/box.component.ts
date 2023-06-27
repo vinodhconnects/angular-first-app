@@ -8,8 +8,10 @@ import { Component } from '@angular/core';
 export class BoxComponent {
     btitle:string= "notitle"
     items:string[]=["item1","item2","item3"]
+    current:string= '#2E4053'
     boxStyle:any={
-       fontFamily: 'Arial'
+       fontFamily: 'Arial',
+      
     }
 
     onFontChange(font:string){

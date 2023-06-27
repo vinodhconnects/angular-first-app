@@ -1,9 +1,10 @@
-<div class="box" [ngStyle]="boxStyle">
+<div class="box" [ngStyle]="boxStyle" [style.backgroundColor]="current">
     <div class="header"><h3> {{btitle}}</h3>
         <div class="fonts">
              <span [style.fontFamily]="'Arial'" (click)="onFontChange('Arial')">A</span>
              <span [style.fontFamily]="'Impact'" (click)="onFontChange('Impact')">A</span>
              <span [style.fontFamily]="'Courier'" (click)="onFontChange('Courier')">A</span>
+             <span><input type="color" [(ngModel)]="current"></span>
         </div>
     </div>
     <hr/>

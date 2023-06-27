@@ -1,4 +1,4 @@
-import { Component ,Input } from '@angular/core';
+import { Component ,Input ,Output, EventEmitter} from '@angular/core';
 
 @Component({
   selector: 'app-box',
@@ -14,7 +14,12 @@ export class BoxComponent {
       
     }
 
-    onFontChange(font:string){
+     @Output("itemselect") sendItem:EventEmitter<string> = new EventEmitter<string>()
+    
+     onFontChange(font:string):void{
        this.boxStyle = {fontFamily: font}
+    }
+    onItemSelect(item:string):void {
+       this.sendItem.emit(item)
     }
 }

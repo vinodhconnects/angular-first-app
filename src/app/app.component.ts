@@ -7,6 +7,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'firstapp';
+  message= "No mesage yet!"
   boxtitles:string[]=["Electronics","Sports","Computer Languages","Spoken Languages","Countries"]
   boxitems:string[][] =[
     ["Pendrive","Laptop","Mobile"],
@@ -15,4 +16,8 @@ export class AppComponent {
     ["Tamil","English","French"],
     ["India","Japan","Mangolia","China"]
   ]
+
+  processMessage(data:string,box:string) {
+     this.message = data + " is selected from box "+box
+  }
 }

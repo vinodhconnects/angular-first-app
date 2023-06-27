@@ -1,6 +1,10 @@
 <h1> {{ title }} </h1>
+<h3>
+     {{message}}
+</h3>
 <app-box *ngFor="let x of boxtitles;let y=index" [title]="x"
-[items]="boxitems[y]"></app-box>
+[items]="boxitems[y]"
+(itemselect)="processMessage($event,x)"></app-box>
 
 <!--
   <app-box></app-box>

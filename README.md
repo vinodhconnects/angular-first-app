@@ -162,3 +162,33 @@ Note: alias can also be used for @Input
 <app-box [btitle]="x"></app-box>
 
 ```
+
+### child to parent communication
+
+This mechanism should be avoided as the data flow must be ensured
+to flow from parent to child neverthless we can try to send data from
+child to parent if an event occurs in child in few cases
+
+for this child must have a variable of type EventEmitter and that
+variable must be decorated with a decorator called @Output
+
+for example,
+
+```
+  @Output sendItem:EventEmitter<string> =new EventEmitter<string>()
+
+  in the code somewhere,
+
+  this.sendItem.emit("Data")
+
+
+  the receiver[parent] must be subscribing to this event, this can be
+  done by using the following syntax
+
+  if app-box is the component in which the @output is defined
+
+  <app-box (sendItem)="process($event)">
+
+  $event is an inbuilt angular variable which get the value emitted
+  by current event
+```

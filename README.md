@@ -36,4 +36,49 @@ There are three kinds of directives in angular
 
      some inbuilt structural directives include  ngFor,ngIf, ngSwitch
 
-     
+* attribute directives
+
+     attribute directives are custom attributes that are applied
+     on target elements
+
+     these direcives changes the behaviour or listens to the behaviour
+     of target elements
+
+     these attributes are further classified into three kinds
+
+     * input directives
+     * output directives
+     * input output directives
+
+     * input directives
+
+        input directives receives value from the right
+        the change the behaviour of the target element
+        in general, input directives are enclosed within []
+
+        some inbuilt input directives are
+
+        ```
+          ngClass,ngStyle, style, routerLink
+
+        ```
+
+        example 
+```
+            <div [ngClass]="temp"></div>
+
+                in the above example    
+
+                div is the target element
+                ngClass is the input directive
+                it looks for value of variable temp
+
+            <div ngClass="temp"></div>
+
+                  this is also valid, in this case
+                  temp is a string and it is direct
+                  value for ngClass  
+
+            <div  [ngClass]="'temp'"></div>   
+
+            ```
